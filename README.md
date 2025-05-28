@@ -19,15 +19,15 @@
 
 
 ### Описание исходных данных
-<mark>ПРЕДВАРИТЕЛЬНО будет несколько таблиц</mark> 
-1. Данные по закачке/отборам из турецких ПХГ (https://seffaflik.epias.com.tr/natural-gas/natural-gas-transmission/storage/daily-actualization-amount)
-2. Данные по подаче газа в ГТС (https://seffaflik.epias.com.tr/natural-gas/natural-gas-transmission/actualization/entry-amount)
-3. Данные по электрогенерации (https://seffaflik.epias.com.tr/electricity/electricity-generation/ex-post-generation/real-time-generation)
-4. Данные по ценам на газ (https://seffaflik.epias.com.tr/natural-gas/natural-gas-markets/spot-gas-markets-sgp/price/daily-reference-price-drp)
+1. Данные по ценам на газ (раздел Daily Reference Price https://seffaflik.epias.com.tr/natural-gas-service/v1/markets/sgp/data/daily-reference-price)
+2. Данные по объему торгов (раздел GRP Trade Volume https://seffaflik.epias.com.tr/natural-gas-service/v1/markets/sgp/data/total-trade-volume)
 
 ### Описание выходных форматов 
-Дашборд с небольшой аналитикой <mark>например (в зависимости от наличия исторических данных)</mark>:
-1. Текущая цена и отклонение с предыдущим днем и средней за месяц
-2. Подсчет нетто в ПХГ (из данных по закачке/отборам)
-3. Сравнение генерации электроэнергии с отборам из ПХГ
-и т.д.
+#### Витрина в clickhouse
+Таблица с объединенными данными по ценам и объемам торгов   
+
+#### Дашборд с небольшой аналитикой <mark>например (в зависимости от наличия исторических данных)</mark>:
+1. Текущая цена и отклонение с предыдущим днем
+2. Ежемесячный объем торгов
+3. Ежедневное сравнение цен и объема торгов 
+
