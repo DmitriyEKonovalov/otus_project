@@ -172,3 +172,6 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+/clickhouse_data/
+/metabase_data/
+/postgres_data/
