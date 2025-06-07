@@ -123,8 +123,8 @@ with DAG(
     default_args=default_args,
     description='Получает данные с EPIAS записывает в БД и собирает витрину для визуализации',
     schedule_interval='0 9 * * *',
-    start_date=days_ago(1),
-    catchup=False,
+    start_date=days_ago(20),
+    catchup=True,
 ) as dag:
 
     begin = EmptyOperator(task_id='begin')
